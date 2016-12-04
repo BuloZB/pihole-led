@@ -11,7 +11,7 @@
 ### License:        Copyleft. Enjoy!
 ###########
 echo -n 0 >/sys/class/leds/omnia-led:user1/autonomous
-echo -n 255 0 0 >/sys/class/leds/omnia-led:user1/color
+echo -n 255 0 255 >/sys/class/leds/omnia-led:user1/color
 
 tail -f /srv/lxc/pi-hole/rootfs/var/log/pihole.log | while read INPUT
 do
